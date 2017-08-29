@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fira Mono', monospace;
+  color: #e9edfc;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;  // move it slightly higher than the center
+}
+
+.title {
+  color: #e9edfc;
+  font-size: 35px;
+}
+
+/* FORM */
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-container input[type=text] {
+  flex: 1;
+  margin-right: 10px;
+  height: 33px;
+  background: rgba(0,0,0,0.2);
+  border: solid 1px #ccc;
+  padding: 0 10px;
+  color: #eee;
+  font-size: 14px;
+}
+
+.input-container > label {
+  margin-left: auto;
+}
+
+.input-container input[type=file] {
+  display: none;
+}
+
+.button {
+  width: 120px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  border: solid 1px #ccc;
+  color: #eee;
+  background-color: transparent;
+  font-family: 'Fira Mono', monospace;
+  font-size: 14px;
+  padding: 0;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* RESULT */
+
+.result {
+  display: none;
+  width: 100%;
+}
+
+.status {
+  text-align: center;
+}
+
+.response {
+  background-color: white;
+  padding: 5px;
+  margin-top: 5px;
+  color: black;
+}

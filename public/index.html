@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>File Metadata Microservice</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">File Metadata Microservice</h1>
+    <div class="input-container">
+      <input type="text" name="file-name" disabled>
+      <label for="file" class="button">Select File</label>
+      <input type="file" id="file" name="file" />
+    </div>
+    <button type="submit" class="button">Upload</button>
+    <div class="result">
+      <h4 class="status">File Uploaded!</h4>
+      Server response:
+      <div class="response"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
